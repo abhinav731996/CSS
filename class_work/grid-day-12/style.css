@@ -53,7 +53,7 @@ footer{
 .inner-grid-2{
     --columns: 4
     /* grid-template-columns: repeat(4, 1fr); */
-    grid-template-columns: repeat((var(--columns)), minmax(200px,1fr));
+    grid-template-columns: repeat((var(--columns)), minmax(200px,1fr))/;
 }
 /* @media (max-width : 768px){
     .inner-grid-2{
