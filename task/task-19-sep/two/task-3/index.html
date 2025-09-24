@@ -2,53 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>gridtask3</title>
-    <style>
-        .rounded {
-            border-radius: 5px;
-            border: 5px solid gray;
-            box-shadow: 1px 2px gray;
-        }
-
-        .boxes {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            grid-template-rows: repeat(3, 1fr);
-            gap: 20px;
-            background-color: beige;
-            height: 75vh;
-            width: 75%;
-            align-items: center;
-            justify-items: center;
-            padding: 30px;
-            margin: 25px;
-        }
-
-        .box {
-            background-color: rgb(39, 79, 223);
-            color: white;
-            width: 100%;
-            height: 100px;
-            display: grid;
-            place-items: center;
-            font-weight: bold;
-        }
-
-        .box1 { grid-column: 1 / 6; grid-row: 1 / 2;}
-        .box2 { grid-column: 1 / 3; grid-row: 2 / 2; }
-        .box3 { grid-column: 3 / 6; grid-row: 3 / 2; }
-        .box4 { grid-column: 3 / 6; grid-row: 3 / 3; }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-3</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <main>
-        <div class="boxes rounded">
-            <div class="one box1 box rounded">one</div>
-            <div class="two box2 box rounded">two</div>
-            <div class="three box3 box rounded">three</div>
-            <div class="four box4 box rounded">four</div>
+    <main>
+        <div class="boxes">
+            <div class="box1 border">1</div>
+            <div class="box2 border">2</div>
+            <div class="box3 border">3</div>
+            <div class="box4 border">4</div>
         </div>
-     </main>
+    </main>
 </body>
 </html>

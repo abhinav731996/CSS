@@ -9,12 +9,16 @@
     --body-color: black;
     --body-bg: gray;
     --link-color: yellow;
+    /* --hover-color: rgb(15, 223, 15); */
 
 }
 body{
     color: var(--body-color);
     background: var(--body-bg);
 }
-.nva-link{
+.nav-link{
     color: var(--link-color);
+}
+.nav-link:hover{
+    color: var(--hover-color, blue);        /*fall back value*/
 }
