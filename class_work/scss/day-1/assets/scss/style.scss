@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --abc:#000;
+}
+@import "";
+
+$black: #000;
+$primary: blue;
+$secondary: orange;
+$white: #ffff;
+
+
+.text-black{
+   color: $abc
+}
+.text-primary-100{
+    color: rgba($color: $primary, $alpha: .1);
+}
+.header{
+    background: black;
+    a{
+        color: white;
+        &:hover{
+            color: red;
+        }
+    }
+    &top{
+        background: blue;
+    }
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+    li{
+
+    }
+}
