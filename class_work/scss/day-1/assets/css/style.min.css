@@ -1,1 +1,1 @@
-*{box-sizing:border-box}:root{--abc:#000}.text-black{color:#000}/*# sourceMappingURL=style.min.css.map */
+*{box-sizing:border-box;margin:0;padding:0}:root{--abc: black}.text-black{color:#000}.text-primary-100{color:rgba(0,0,0,.1)}.header{background:#000}.header a{color:#fff}.header a:hover{color:red}.header_top{background:red}ul{list-style:none;padding-left:0}ul li{margin-bottom:1rem}ul li:last-child{margin-bottom:0}/*# sourceMappingURL=style.min.css.map */

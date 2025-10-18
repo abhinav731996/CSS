@@ -1,23 +1,16 @@
-*{
-    box-sizing: border-box;
-}
+@import url(./_variables.scss);
+@import url(./_reset.scss);
 :root{
-    --abc:#000;
+    --abc: black;
 }
-@import "";
-
-$black: #000;
-$primary: blue;
-$secondary: orange;
-$white: #ffff;
-
 
 .text-black{
-   color: $abc
+    color: $black;
 }
 .text-primary-100{
-    color: rgba($color: $primary, $alpha: .1);
+    color: rgba($black, .1);
 }
+
 .header{
     background: black;
     a{
@@ -26,14 +19,7 @@ $white: #ffff;
             color: red;
         }
     }
-    &top{
-        background: blue;
-    }
-}
-ul{
-    list-style: none;
-    padding-left: 0;
-    li{
-
+    &_top{
+        background: red;
     }
 }
