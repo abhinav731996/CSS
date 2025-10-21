@@ -23,4 +23,32 @@
     &_top{
         background: red;
     }
+    .menubar{
+        @include flex(center, center);
+        li{
+            margin-bottom: 0;
+        }
+    }
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+    li{
+        margin-bottom: 1rem;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+button{
+    border: 1px solid transparent;
+    border-radius: 0;
+
+}
+h1{
+    font-weight: 700;
+    @extend h1;
+}
+.btn{
+    @extend button;
 }
