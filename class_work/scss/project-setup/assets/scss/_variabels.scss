@@ -45,3 +45,36 @@ $fonts: (
 $btn-font-size: $basefont;
 $btn-font-size-lg: $basefont *1.25;
 $btn-font-size-sm: $basefont *.75;
+
+//spacers
+$spacer: 1rem;
+$spacers: (
+    1: $spacer * .25,
+    2: $spacer * .5,
+    3: $spacer * .75,
+    4: $spacer * 1,
+    5: $spacer * 1.25,
+    6: $spacer * 1.5,
+    7: $spacer * 2,
+);
+
+$spacersiders: ('top':'t', 'bottom':'b', 'right':'r', 'left':'l', 'block':'y', 'inline':'x');
+
+@each $key, $value in $spacers{
+    .p-#{$key}{
+        padding: $value;
+    }
+    @each $side, $suffix in $spacersiders{
+        .p#{$suffix}-#{$key}{
+            padding-#{$side}: $value;
+        }
+    }
+    .m-#{$key}{
+        margin: $value;
+    }
+    @each $side, $suffix in $spacersiders{
+        .m#{$suffix}-#{$key}{
+            margin-#{$side}: $value;
+        }
+    }
+}
